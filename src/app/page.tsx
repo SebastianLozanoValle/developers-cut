@@ -34,6 +34,9 @@ export default function Home() {
   return (
     <main className={`${font.className} bg-[#F4F4F4]`}>
       <span className={`${allReady ? 'already-loaded' : 'page-loader'}`}>
+        <div className={`${allReady ? 'hidden' : null}`}>
+          <Spinner />
+        </div>
       </span>
       
       <motion.div
@@ -45,8 +48,8 @@ export default function Home() {
         onViewportEnter={()=> handlerScrolledBanner(false)}
       >
         <div className="flex flex-col items-center gap-4 w-3/4">
-          <h1 className="font-bold text-4xl text-white text-center text-[40px]">Un Slogan Creativo que defina SLE</h1>
-          <p className="text-[28px] text-white">mamaguevazo digo glu glu glu</p>
+          <h1 className="font-bold text-4xl text-white text-center text-[40px]">SLE te impulsa</h1>
+          <p className="text-[28px] text-white text-center">lleva tu empresa a nuevos horizontes con nosotros</p>
         </div>
       </motion.div>
       {/* inicio de seccion desktop */}
@@ -118,7 +121,7 @@ export default function Home() {
         <motion.div
           className='flex'
         >
-          <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pl-[20vw]">
+          <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pl-[10vw]">
             <div className='flex flex-col gap-8 w-3/4'>
               <h2 className="font-bold text-black text-[30px] capitalize">Tu presencia en la web hace la diferencia</h2>
               <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
@@ -151,7 +154,7 @@ export default function Home() {
           </div>
         </motion.div>
         <div className='flex'>
-          <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pl-[20vw]">
+          <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pl-[10vw]">
             <div className='flex flex-col gap-8 w-3/4'>
               <h2 className="font-bold text-black text-[30px] capitalize">No logras llegar a tus clientes? <br/> marketing es la respuesta</h2>
               <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
@@ -185,7 +188,7 @@ export default function Home() {
           <div className="w-1/2 min-h-[calc(100vh-92px)] bg-[#8E9BFF] rounded-tr-[100px]">
             
           </div>
-          <div className="z-[7] w-1/2 bg-[#6C00E6] min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pr-[20vw]">
+          <div className="z-[7] w-1/2 bg-[#6C00E6] min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pr-[10vw]">
             <div className='flex flex-col gap-8 w-3/4'>
               <h2 className="font-bold text-black text-[30px] capitalize">Soluciones dinamicas para las empresas del mañana</h2>
               <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
