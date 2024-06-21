@@ -1,5 +1,5 @@
 'use client'
-import { Landing } from "@/pages/Landing";
+import { Landing } from "@/components/pages/Landing";
 import { Montserrat } from "next/font/google";
 
 const font = Montserrat({
