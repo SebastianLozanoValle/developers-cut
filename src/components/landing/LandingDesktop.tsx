@@ -5,14 +5,23 @@ import {
   motion
 } from 'framer-motion'
 import { useState } from "react";
+import { FaReact, FaWordpressSimple, FaApple, FaPython, FaCss3Alt, FaHtml5, FaJava, FaShopify, FaWix, FaCode } from "react-icons/fa";
+import { SiNextdotjs, SiKotlin, SiWoo } from "react-icons/si";
+import { FcAndroidOs } from "react-icons/fc";
 
 export const LandingDesktop = () => {
 
     const [scrolledBanner, setScrolledBanner] = useState(true);
+    const [scrolledIntro, setScrolledIntro] = useState(true);
 
     const handlerScrolledBanner = (value: boolean) => {
         setScrolledBanner(value);
-        console.log(value)
+        // console.log(value)
+    }
+
+    const handleScrolledIntro = (value: boolean) => {
+        setScrolledIntro(value);
+        console.log('se scrolleo el intro')
     }
 
     return(
@@ -163,11 +172,11 @@ export const LandingDesktop = () => {
                     </div>
                 </div>
                 <div className='flex'>
-                    <div className="w-1/2 min-h-[calc(100vh-92px)] bg-[#8E9BFF] rounded-tr-[100px]">
+                    <div className="w-1/2 min-h-[calc(100vh-92px)] bg-[#8E9BFF] rounded-r-[100px]">
                         
                     </div>
                     <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pr-[10vw]">
-                        <div className='flex flex-col gap-8 w-3/4'>
+                        <motion.div className='flex flex-col gap-8 w-3/4'>
                             <h2 className="font-bold text-black text-[30px] capitalize">Soluciones dinamicas para las empresas del mañana</h2>
                             <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
                                 <li>
@@ -192,19 +201,144 @@ export const LandingDesktop = () => {
                                 nuestras soluciones
                                 </a>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
-                <div className="relative flex items-center w-4/5 mx-auto bg-[#f4f4f4] z-[9] min-h-screen">
-                    <div className="w-1/2">
-                        <h2 className="font-bold text-black text-[30px] capitalize">Que Usamos?</h2>
-                        <p className="">
-                            En SLE utilizamos tecnologias de vanguardia y herramientas consolidadas en el mercada.
-                            De a cuerdo a las nesesidades de tu proyecto generaremos un plan estructurado en lo que mas te convenga logrando un equilibrio entre eficiencia, calidad y velocidad de entrega
-                        </p>
+                <div
+                    className="relative flex gap-8 items-start w-4/5 mx-auto bg-[#f4f4f4] z-[9]"
+                >
+                    <div
+                        className="min-h-screen top-0 sticky flex items-center flex-[3]"
+                    >
+                        <div>
+                            <h2 className="font-bold text-black text-[30px] capitalize">Que Usamos?</h2>
+                            <p className="font-bold">
+                                En SLE utilizamos tecnologias de vanguardia y herramientas consolidadas en el mercada.
+                                De a cuerdo a las nesesidades de tu proyecto generaremos un plan estructurado en lo que mas te convenga logrando un equilibrio entre eficiencia, calidad y velocidad de entrega.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col justify-center items-center flex-[4]"
+                    >
+                        <div className="flex flex-col items-center h-screen justify-center w-3/4">
+                            <div className="grid grid-cols-3 items-center justify-around w-full gap-8">
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaHtml5 className="rounded-full p-2 text-6xl text-orange-500 border-4 border-orange-500" />
+                                    <span>HTML5</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaCss3Alt className="rounded-full p-2 text-6xl text-blue-400 border-4 border-blue-400" />
+                                    <span>CSS</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaReact className="rounded-full p-2 text-6xl text-blue-500 border-4 border-blue-500" />
+                                    <span>React</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaJava className="rounded-full p-2 text-6xl text-blue-400 border-4 border-red-500" />
+                                    <span>Java</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaPython className="rounded-full p-2 text-6xl text-yellow-500 border-4 border-blue-500" />
+                                    <span>python</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                                    <span>Next.js</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-center">
+                                    <div className="rounded-full p-3 text-2xl text-[#6C00E6] border-4 border-[#6C00E6]">
+                                        <SiKotlin />
+                                    </div>
+                                    <span>Kotlin</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FcAndroidOs className="rounded-full p-2 text-6xl border-4 border-[#7CB342]" />
+                                    <span>Android</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaApple className="rounded-full p-2 text-6xl text-[#B7B7B7] border-4 border-[#B7B7B7]" />
+                                    <span>Apple</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaWordpressSimple className="rounded-full p-2 text-6xl text-[#1B769C] border-4 border-[#1B769C]" />
+                                    <span>WordPress</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaWix className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                                    <span>Apple</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaShopify className="rounded-full p-2 text-6xl text-[#8DB543] border-4 border-[#8DB543]" />
+                                    <span>Shopify</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-center">
+                                    <div className="rounded-full p-3 text-3xl text-[#8053B4] border-4 border-[#8053B4]">
+                                        <SiWoo />
+                                    </div>
+                                    <span>WooCommerce</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col items-center h-screen justify-center w-3/4">
+                            <div className="grid grid-cols-3 items-center justify-around w-full gap-8">
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaHtml5 className="rounded-full p-2 text-6xl text-orange-500 border-4 border-orange-500" />
+                                    <span>HTML5</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaCss3Alt className="rounded-full p-2 text-6xl text-blue-400 border-4 border-blue-400" />
+                                    <span>CSS</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaReact className="rounded-full p-2 text-6xl text-blue-500 border-4 border-blue-500" />
+                                    <span>React</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaJava className="rounded-full p-2 text-6xl text-blue-400 border-4 border-red-500" />
+                                    <span>Java</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaPython className="rounded-full p-2 text-6xl text-yellow-500 border-4 border-blue-500" />
+                                    <span>python</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                                    <span>Next.js</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-center">
+                                    <div className="rounded-full p-3 text-2xl text-[#6C00E6] border-4 border-[#6C00E6]">
+                                        <SiKotlin />
+                                    </div>
+                                    <span>Kotlin</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FcAndroidOs className="rounded-full p-2 text-6xl border-4 border-[#7CB342]" />
+                                    <span>Android</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaApple className="rounded-full p-2 text-6xl text-[#B7B7B7] border-4 border-[#B7B7B7]" />
+                                    <span>Apple</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col items-center h-screen justify-center">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Codigo</span>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
+                            <FaCode className="rounded-full p-2 text-6xl text-[#6C00E6] border-4 border-[#6C00E6]" />
+                            <span>Codigo</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </>
     )
 }
+
+// import { , , , , , , , , ,  } from "react-icons/fa";
+// import { ,  } from "react-icons/si";
+// import {  } from "react-icons/fc";
+// import { SiWoocommerce } from "react-icons/si";
