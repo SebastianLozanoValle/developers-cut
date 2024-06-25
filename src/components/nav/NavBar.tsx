@@ -9,7 +9,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const navlinks = [
     {
-      href: '/0',
+      href: '/pruebas',
       text: 'Servicios'
     },
     {

@@ -167,12 +167,12 @@ export const LandingDesktop = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-1/2 bg-[#2B3550] min-h-[calc(100vh-92px)] rounded-bl-[100px]">
+                    <div className="w-1/2 bg-[#2B3550] min-h-[calc(100vh-92px)]">
                         
                     </div>
                 </div>
                 <div className='flex'>
-                    <div className="w-1/2 min-h-[calc(100vh-92px)] bg-[#8E9BFF] rounded-r-[100px]">
+                    <div className="w-1/2 min-h-[calc(100vh-92px)] bg-[#8E9BFF]">
                         
                     </div>
                     <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pr-[10vw]">
