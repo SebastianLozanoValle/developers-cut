@@ -1,9 +1,17 @@
 import { FaPencilAlt, FaWhatsapp } from "react-icons/fa"
 import { GiHoneycomb } from "react-icons/gi"
+import { ContactForm } from "../forms/ContactForm"
+import { useIsOpenForm } from "@/store/ContactFormStore"
 
 export const LandingMobile = () => {
+
+    const {isOpen, openCloseForm} = useIsOpenForm()
+
     return (
         <>
+            {
+                isOpen && <ContactForm />
+            }
             <div
                 className="relative z-[9] flex justify-center items-center min-h-[345px] bg-[#6C00E6]"
             >
@@ -52,10 +60,10 @@ export const LandingMobile = () => {
                         </li>
                     </ul>
                     <div className="flex justify-center">
-                        <a href="#" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-green-600 transition-all duration-500 active:bg-green-800">
-                        <FaWhatsapp className="text-2xl capitalize" />
+                        <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                        <FaPencilAlt className="text-2xl capitalize" />
                         Contactanos
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

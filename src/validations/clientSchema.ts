@@ -27,9 +27,10 @@ export const clientSchema = z.object({
     }).max(50, {
         message: 'Este campo debe tener menos de 50 caracteres'
     }),
-    phone: z.string().refine((phone) => !isNaN(parseFloat(phone)), {
-        message: "Debe dijitar un numero valido",
-    }),
+    phone: z.string().min(1, { message: "Numero de contacto es requerido" }).refine((value) => {
+        // Puedes agregar más lógica de validación aquí si es necesario
+        return !!value.match(/^\+?[1-9]\d{1,14}$/); // Simple regex for international phone numbers
+    }, { message: "Formato de numero de contacto invalido" }),
     email: z.string().email({
         message: 'Debe ingresar un correo valido'
     }),

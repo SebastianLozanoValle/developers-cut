@@ -7,25 +7,53 @@ import {
 import { useState } from "react";
 import { FaReact, FaWordpressSimple, FaApple, FaPython, FaCss3Alt, FaHtml5, FaJava, FaShopify, FaWix, FaCode } from "react-icons/fa";
 import { SiNextdotjs, SiKotlin, SiWoo } from "react-icons/si";
-import { FcAndroidOs } from "react-icons/fc";
+import { IoLogoAndroid } from "react-icons/io";
+import { ContactForm } from "../forms/ContactForm";
+import { useIsOpenForm } from "@/store/ContactFormStore";
 
+const services =[
+        {
+            title: "que usamos",
+            text: "En SLE utilizamos tecnologias de vanguardia y herramientas consolidadas en el mercada. De a cuerdo a las nesesidades de tu proyecto generaremos un plan estructurado en lo que mas te convenga logrando un equilibrio entre eficiencia, calidad y velocidad de entrega."
+        },
+        {
+            title: "Herramientas No-Code",
+            text: "En SLE utilizamos tecnologias de vanguardia y herramientas consolidadas en el mercada. De a cuerdo a las nesesidades de tu proyecto generaremos un plan estructurado en lo que mas te convenga logrando un equilibrio entre eficiencia, calidad y velocidad de entrega."
+        },
+        {
+            title: "Tecnologias Web",
+            text: "En SLE utilizamos tecnologias de vanguardia y herramientas consolidadas en el mercada. De a cuerdo a las nesesidades de tu proyecto generaremos un plan estructurado en lo que mas te convenga logrando un equilibrio entre eficiencia, calidad y velocidad de entrega."
+        },
+        {
+            title: "Desarrollo De aplicaciones nativas",
+            text: "En SLE utilizamos tecnologias de vanguardia y herramientas consolidadas en el mercada. De a cuerdo a las nesesidades de tu proyecto generaremos un plan estructurado en lo que mas te convenga logrando un equilibrio entre eficiencia, calidad y velocidad de entrega."
+        },
+    ]
+
+    
 export const LandingDesktop = () => {
 
     const [scrolledBanner, setScrolledBanner] = useState(true);
-    const [scrolledIntro, setScrolledIntro] = useState(true);
+    const [currentService, setCurrentService] = useState(0)
 
     const handlerScrolledBanner = (value: boolean) => {
         setScrolledBanner(value);
         // console.log(value)
     }
 
-    const handleScrolledIntro = (value: boolean) => {
-        setScrolledIntro(value);
-        console.log('se scrolleo el intro')
+    const {isOpen, openCloseForm} = useIsOpenForm()
+
+    const serviceChangeHandler = (servicePosition: number) => {
+        console.log('pasando por el servicio ' + servicePosition)
+        setCurrentService(servicePosition)
     }
 
     return(
         <>
+            {
+                isOpen && <ContactForm />
+            }
+            {/* <ContactForm /> */}
             <motion.div
                 className="relative z-[9] flex justify-center items-center min-h-[345px] bg-[#6C00E6]"
                 viewport={{
@@ -129,10 +157,10 @@ export const LandingDesktop = () => {
                             </li>
                         </ul>
                         <div className="flex justify-center">
-                            <a href="#" className="text-white px-4 py-2 font-bold flex gap-2 items-center wp-btn">
-                            <FaWhatsapp className="text-2xl capitalize" />
+                            <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
+                            <FaPencilAlt className="text-2xl capitalize" />
                             Contactanos
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -210,37 +238,59 @@ export const LandingDesktop = () => {
                     <div
                         className="min-h-screen top-0 sticky flex items-center flex-[3]"
                     >
-                        <div>
-                            <h2 className="font-bold text-black text-[30px] capitalize">Que Usamos?</h2>
+                        <motion.div
+                            key={currentService}
+                            initial={{ opacity: 0, translateX: -200 }}
+                            animate={{ opacity: 1, translateX: 0 }}
+                            exit={{ opacity: 0, translateX: -200 }}
+                            transition={{ duration: .5 }}
+                        >
+                            <motion.h2
+                                key={currentService}
+                                initial={{ opacity: 0, translateX: -200 }}
+                                animate={{ opacity: 1, translateX: 0 }}
+                                exit={{ opacity: 0, translateX: -200 }}
+                                transition={{ duration: .5 }}
+                                className="font-bold text-black text-[30px] capitalize"
+                            >
+                                {services[currentService].title}
+                            </motion.h2>
                             <p className="font-bold">
-                                En SLE utilizamos tecnologias de vanguardia y herramientas consolidadas en el mercada.
-                                De a cuerdo a las nesesidades de tu proyecto generaremos un plan estructurado en lo que mas te convenga logrando un equilibrio entre eficiencia, calidad y velocidad de entrega.
+                                {services[currentService].text}
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div
                         className="flex flex-col justify-center items-center flex-[4]"
                     >
-                        <div className="flex flex-col items-center h-screen justify-center w-3/4">
-                            <div className="grid grid-cols-3 items-center justify-around w-full gap-8">
+                        <div
+                            className="flex flex-col items-center h-screen justify-center w-3/4"
+                        >
+                            <motion.div
+                                viewport={{
+                                    margin: '-300px',
+                                    }}
+                                onViewportEnter={()=> serviceChangeHandler(0)}
+                                className="grid grid-cols-3 items-center justify-around w-full gap-8"
+                            >
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaHtml5 className="rounded-full p-2 text-6xl text-orange-500 border-4 border-orange-500" />
+                                    <FaHtml5 className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>HTML5</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaCss3Alt className="rounded-full p-2 text-6xl text-blue-400 border-4 border-blue-400" />
+                                    <FaCss3Alt className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>CSS</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaReact className="rounded-full p-2 text-6xl text-blue-500 border-4 border-blue-500" />
+                                    <FaReact className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>React</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaJava className="rounded-full p-2 text-6xl text-blue-400 border-4 border-red-500" />
+                                    <FaJava className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>Java</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaPython className="rounded-full p-2 text-6xl text-yellow-500 border-4 border-blue-500" />
+                                    <FaPython className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>python</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
@@ -248,21 +298,21 @@ export const LandingDesktop = () => {
                                     <span>Next.js</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-center">
-                                    <div className="rounded-full p-3 text-2xl text-[#6C00E6] border-4 border-[#6C00E6]">
+                                    <div className="rounded-full p-3 text-2xl text-black border-4 border-black">
                                         <SiKotlin />
                                     </div>
                                     <span>Kotlin</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FcAndroidOs className="rounded-full p-2 text-6xl border-4 border-[#7CB342]" />
+                                    <IoLogoAndroid className="rounded-full p-2 text-6xl border-4 border-black" />
                                     <span>Android</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaApple className="rounded-full p-2 text-6xl text-[#B7B7B7] border-4 border-[#B7B7B7]" />
+                                    <FaApple className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>Apple</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaWordpressSimple className="rounded-full p-2 text-6xl text-[#1B769C] border-4 border-[#1B769C]" />
+                                    <FaWordpressSimple className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>WordPress</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
@@ -270,19 +320,27 @@ export const LandingDesktop = () => {
                                     <span>Apple</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaShopify className="rounded-full p-2 text-6xl text-[#8DB543] border-4 border-[#8DB543]" />
+                                    <FaShopify className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>Shopify</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-center">
-                                    <div className="rounded-full p-3 text-3xl text-[#8053B4] border-4 border-[#8053B4]">
+                                    <div className="rounded-full p-3 text-3xl text-black border-4 border-black">
                                         <SiWoo />
                                     </div>
                                     <span>WooCommerce</span>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
-                        <div className="flex flex-col items-center h-screen justify-center w-3/4">
-                            <div className="grid grid-cols-3 items-center justify-around w-full gap-8">
+                        <div
+                            className="flex flex-col items-center h-screen justify-center w-3/4"
+                        >
+                            <motion.div
+                                viewport={{
+                                    margin: '-300px',
+                                    }}
+                                onViewportEnter={()=> serviceChangeHandler(1)}
+                                className="grid grid-cols-3 items-center justify-around w-full gap-8"
+                            >
                                 <div className="flex flex-col items-center justify-around">
                                     <FaHtml5 className="rounded-full p-2 text-6xl text-orange-500 border-4 border-orange-500" />
                                     <span>HTML5</span>
@@ -314,14 +372,14 @@ export const LandingDesktop = () => {
                                     <span>Kotlin</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FcAndroidOs className="rounded-full p-2 text-6xl border-4 border-[#7CB342]" />
+                                    <IoLogoAndroid className="rounded-full p-2 text-6xl border-4 border-[#7CB342]" />
                                     <span>Android</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
                                     <FaApple className="rounded-full p-2 text-6xl text-[#B7B7B7] border-4 border-[#B7B7B7]" />
                                     <span>Apple</span>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                         <div className="flex flex-col items-center h-screen justify-center">
                             <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
@@ -337,8 +395,3 @@ export const LandingDesktop = () => {
         </>
     )
 }
-
-// import { , , , , , , , , ,  } from "react-icons/fa";
-// import { ,  } from "react-icons/si";
-// import {  } from "react-icons/fc";
-// import { SiWoocommerce } from "react-icons/si";
