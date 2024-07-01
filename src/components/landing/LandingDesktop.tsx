@@ -18,11 +18,15 @@ const services =[
         },
         {
             title: "Herramientas No-Code",
-            text: "En SLE utilizamos tecnologias de vanguardia y herramientas consolidadas en el mercada. De a cuerdo a las nesesidades de tu proyecto generaremos un plan estructurado en lo que mas te convenga logrando un equilibrio entre eficiencia, calidad y velocidad de entrega."
+            text: "Sabemos que tu tiempo es importante por lo cual utilizamos tecnologias de proccion que aseguran cortos tiempos de entrega sin perder la calidad en proyectos pequeños/medianos, con optimizacion de alta calidad y posicionamiento SEO."
         },
         {
             title: "Tecnologias Web",
-            text: "En SLE utilizamos tecnologias de vanguardia y herramientas consolidadas en el mercada. De a cuerdo a las nesesidades de tu proyecto generaremos un plan estructurado en lo que mas te convenga logrando un equilibrio entre eficiencia, calidad y velocidad de entrega."
+            text: "Para esos proyectos ambiciosos y marcas con identidar marcada, perzonalizacion y eficiencia con tecnologias de vanguardia utilizadas por los grandes de la industria."
+        },
+        {
+            title: "Software & Apps",
+            text: "Nesesitas Soluciones de software que funcionen en todos tus dispositivos y nosotros lo sabemos, por eso ponemos a tu alcance lo ultimo en desarrollo multiplataforma."
         },
         {
             title: "Desarrollo De aplicaciones nativas",
@@ -30,7 +34,7 @@ const services =[
         },
     ]
 
-    
+
 export const LandingDesktop = () => {
 
     const [scrolledBanner, setScrolledBanner] = useState(true);
@@ -183,15 +187,11 @@ export const LandingDesktop = () => {
                                 80% tasa de conversion en ventas.
                                 </li>
                             </ul>
-                            <div className="flex justify-center gap-8 capitalize">
-                                <a href="#" className="text-white px-4 py-2 font-bold flex gap-2 items-center wp-btn">
-                                <FaWhatsapp className="text-2xl" />
-                                Contactanos
-                                </a>
-                                <a href="#" className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
+                            <div className="flex justify-center">
+                                <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
                                 <FaPencilAlt className="text-1xl" />
                                 asesorate
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -244,6 +244,7 @@ export const LandingDesktop = () => {
                             animate={{ opacity: 1, translateX: 0 }}
                             exit={{ opacity: 0, translateX: -200 }}
                             transition={{ duration: .5 }}
+                            className="flex flex-col gap-8"
                         >
                             <motion.h2
                                 key={currentService}
@@ -251,7 +252,7 @@ export const LandingDesktop = () => {
                                 animate={{ opacity: 1, translateX: 0 }}
                                 exit={{ opacity: 0, translateX: -200 }}
                                 transition={{ duration: .5 }}
-                                className="font-bold text-black text-[30px] capitalize"
+                                className="font-extrabold text-[45px] capitalize text-[#6C00E6]"
                             >
                                 {services[currentService].title}
                             </motion.h2>
@@ -342,52 +343,94 @@ export const LandingDesktop = () => {
                                 className="grid grid-cols-3 items-center justify-around w-full gap-8"
                             >
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaHtml5 className="rounded-full p-2 text-6xl text-orange-500 border-4 border-orange-500" />
+                                    <FaWordpressSimple className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                                    <span>WordPress</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaWix className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                                    <span>Apple</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaShopify className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                                    <span>Shopify</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-center">
+                                    <div className="rounded-full p-3 text-3xl text-black border-4 border-black">
+                                        <SiWoo />
+                                    </div>
+                                    <span>WooCommerce</span>
+                                </div>
+                            </motion.div>
+                        </div>
+                        <div
+                            className="flex flex-col items-center h-screen justify-center w-3/4"
+                        >
+                            <motion.div
+                                viewport={{
+                                    margin: '-300px',
+                                    }}
+                                onViewportEnter={()=> serviceChangeHandler(2)}
+                                className="grid grid-cols-3 items-center justify-around w-full gap-8"
+                            >
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaHtml5 className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>HTML5</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaCss3Alt className="rounded-full p-2 text-6xl text-blue-400 border-4 border-blue-400" />
+                                    <FaCss3Alt className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>CSS</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaReact className="rounded-full p-2 text-6xl text-blue-500 border-4 border-blue-500" />
+                                    <FaReact className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>React</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaJava className="rounded-full p-2 text-6xl text-blue-400 border-4 border-red-500" />
+                                    <FaJava className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>Java</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaPython className="rounded-full p-2 text-6xl text-yellow-500 border-4 border-blue-500" />
+                                    <FaPython className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>python</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
                                     <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>Next.js</span>
                                 </div>
+                            </motion.div>
+                        </div>
+                        <div
+                            className="flex flex-col items-center h-screen justify-center w-3/4"
+                        >
+                            <motion.div
+                                viewport={{
+                                    margin: '-300px',
+                                    }}
+                                onViewportEnter={()=> serviceChangeHandler(3)}
+                                className="grid grid-cols-3 items-center justify-around w-full gap-8"
+                            >
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaReact className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                                    <span>Native</span>
+                                </div>
+                                <div className="flex flex-col items-center justify-around">
+                                    <FaJava className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                                    <span>Java</span>
+                                </div>
                                 <div className="flex flex-col items-center justify-center">
-                                    <div className="rounded-full p-3 text-2xl text-[#6C00E6] border-4 border-[#6C00E6]">
+                                    <div className="rounded-full p-3 text-2xl text-black border-4 border-black">
                                         <SiKotlin />
                                     </div>
                                     <span>Kotlin</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <IoLogoAndroid className="rounded-full p-2 text-6xl border-4 border-[#7CB342]" />
+                                    <IoLogoAndroid className="rounded-full p-2 text-6xl border-4 border-black" />
                                     <span>Android</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
-                                    <FaApple className="rounded-full p-2 text-6xl text-[#B7B7B7] border-4 border-[#B7B7B7]" />
+                                    <FaApple className="rounded-full p-2 text-6xl text-black border-4 border-black" />
                                     <span>Apple</span>
                                 </div>
                             </motion.div>
-                        </div>
-                        <div className="flex flex-col items-center h-screen justify-center">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Codigo</span>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <FaCode className="rounded-full p-2 text-6xl text-[#6C00E6] border-4 border-[#6C00E6]" />
-                            <span>Codigo</span>
                         </div>
                     </div>
                 </div>

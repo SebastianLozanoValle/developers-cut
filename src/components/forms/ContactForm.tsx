@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { clientSchema, ClientSchemaType } from "@/validations/clientSchema";
@@ -18,14 +18,22 @@ export const ContactForm = () => {
     });
 
     const {openCloseForm} = useIsOpenForm()
+    const [closing, setClosing] = useState(false);
+
+    const handleClose = () => {
+        setClosing(true);
+        setTimeout(() => {
+            openCloseForm(false);
+        }, 1000); // Duración de la animación
+    };
 
     return (
-        <div className="flex flex-col pt-20 items-center fixed z-[9900] left-0 top-[100px] h-screen w-screen backdrop-blur-sm bg-gray-400/30 gap-4">
+        <div className={`flex flex-col pt-20 items-center contact-form z-[9900] top-[92px] h-screen w-screen backdrop-blur-sm bg-gray-400/30 gap-4 ${closing ? 'hide-form' : ''}`}>
             <form className="relative flex flex-wrap w-auto justify-center bg-white p-[40px] gap-[20px] rounded-xl max-h-[60vh] overflow-y-scroll max-w-[80vw]" onSubmit={handleSubmit(data => console.log(data))}>
                 <div className='flex flex-col items-center gap-[20px]'>
                     <span className='absolute top-[15px] right-[15px] text-xl'>
                         <button
-                            onClick={() => openCloseForm(false)}
+                            onClick={handleClose}
                         >
                             <RxCross2 />
                         </button>
