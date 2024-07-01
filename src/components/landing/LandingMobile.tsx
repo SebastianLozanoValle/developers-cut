@@ -2,6 +2,7 @@ import { FaPencilAlt, FaWhatsapp } from "react-icons/fa"
 import { GiHoneycomb } from "react-icons/gi"
 import { ContactForm } from "../forms/ContactForm"
 import { useIsOpenForm } from "@/store/ContactFormStore"
+import { SiNextdotjs } from "react-icons/si"
 
 export const LandingMobile = () => {
 
@@ -137,6 +138,54 @@ export const LandingMobile = () => {
                         <GiHoneycomb className="text-2xl capitalize" />
                         nuestras soluciones
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                className="relative flex gap-8 items-start w-4/5 mx-auto bg-[#f4f4f4] z-[9]"
+            >
+                <div
+                    className="min-h-screen top-0 sticky flex items-center flex-[3]"
+                >
+                    <div
+                        className="flex flex-col gap-8"
+                    >
+                        <h2
+                            className="font-extrabold text-[45px] capitalize text-[#6C00E6]"
+                        >
+                            Usamos
+                        </h2>
+                        <p className="font-bold">
+                            hola
+                        </p>
+                    </div>
+                </div>
+                <div
+                    className="flex flex-col justify-center items-center flex-[4]"
+                >
+                    <div
+                        className="flex flex-col items-center h-screen justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-screen justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-screen justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -354,3 +354,117 @@
 .hide-form {
   animation: hideForm 1s ease-in-out forwards;
 }
+
+
+
+
+
+/* css viejo del footer*/
+input:focus-visible {
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+  box-shadow: none; /* Elimina cualquier sombra */
+  border-color: transparent; /* Opcional: elimina el color del borde */
+  background: inherit; /* Mantiene el fondo sin cambios */
+  color: inherit; /* Mantiene el color del texto sin cambios */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: hsl(225deg, 40%, 2%);
+  padding-top: 40px;
+  padding-bottom: 80px;
+  color: hsl(225deg, 46%, 95%);
+  /* border-top: 10px hsl(225deg, 40%, 98%) solid; */
+  position: relative;
+  z-index: 8;
+  gap: 50px;
+  padding: 20px 20px 200px 20px;
+}
+
+.logo-media {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.media {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 2px;
+  font-size: 20px;
+}
+
+.media a {
+  transition: all .5s ease;
+}
+
+.media a:hover {
+  font-size: 30px;
+  filter: drop-shadow(2px 2px 4px hsl(213deg, 79%, 85%));
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.footer-column li a {
+  transition: all .5s ease;
+}
+
+.footer-column li a:hover {
+  filter: drop-shadow(2px 2px 4px hsl(213deg, 79%, 85%));
+  font-size: 17px;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscription h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subscription .subscription-field-container {
+  width: 100%;
+  padding: 10px;
+  background: #2E2D2D;
+  border-radius: 30px;
+}
+
+.subscription .subscription-field-container input {
+  background: none;
+  padding-left: 10px;
+}
+
+.subscription .subscription-field-container button {
+  padding: 5px 15px 5px 15px;
+  background: hsl(225deg, 40%, 2%);
+  border-radius: 30px;
+}
+
+.subscription .subscription-field-container:active {
+  border: 2px solid hsl(225deg, 46%, 95%);
+}

@@ -318,7 +318,7 @@ export const LandingDesktop = () => {
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
                                     <FaWix className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                                    <span>Apple</span>
+                                    <span>Wix</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
                                     <FaShopify className="rounded-full p-2 text-6xl text-black border-4 border-black" />
@@ -348,7 +348,7 @@ export const LandingDesktop = () => {
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
                                     <FaWix className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                                    <span>Apple</span>
+                                    <span>Wix</span>
                                 </div>
                                 <div className="flex flex-col items-center justify-around">
                                     <FaShopify className="rounded-full p-2 text-6xl text-black border-4 border-black" />
