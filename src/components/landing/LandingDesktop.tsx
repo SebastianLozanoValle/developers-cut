@@ -10,6 +10,7 @@ import { SiNextdotjs, SiKotlin, SiWoo } from "react-icons/si";
 import { IoLogoAndroid } from "react-icons/io";
 import { ContactForm } from "../forms/ContactForm";
 import { useIsOpenForm } from "@/store/ContactFormStore";
+import { Portfolio } from "./Portfolio";
 
 const services =[
         {
@@ -434,6 +435,7 @@ export const LandingDesktop = () => {
                         </div>
                     </div>
                 </div>
+                <Portfolio />
             </div>
         </>
     )

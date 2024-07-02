@@ -468,3 +468,71 @@ input:focus-visible {
 .subscription .subscription-field-container:active {
   border: 2px solid hsl(225deg, 46%, 95%);
 }
+
+.hexagon-item {
+  position: relative;
+  display: block;
+  background-color: white;
+  width: 110px; /* Valor de $hw */
+  height: 63.95px; /* Valor calculado de $wh */
+  z-index: 1;
+  transition: all 0.5s ease-out;
+  transform: rotate(30deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento 0, 0 y difuminado de 10px */
+  border-radius: 3px;
+}
+
+.hexagon-item:hover, .hexagon-item.active-project {
+  transform: rotate(0deg);
+  background-color: #6C00E6;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada al hacer hover */
+}
+
+.hexagon-item:hover {
+  z-index: 2;
+}
+
+.hexagon-item.active-project{
+  z-index: 3;
+}
+
+.hexagon-item::after,
+.hexagon-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  border-radius: 3px;
+}
+
+.hexagon-item::after {
+  transform: rotate(60deg);
+}
+
+.hexagon-item::before {
+  transform: rotate(-60deg);
+}
+
+.hexagon-item-content {
+  position: absolute;
+  z-index: 1000;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+}
+
+.hexagon-item-content strong {
+  display: block;
+}
