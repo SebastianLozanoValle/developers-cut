@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
 
 /* Estilos para Webkit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
