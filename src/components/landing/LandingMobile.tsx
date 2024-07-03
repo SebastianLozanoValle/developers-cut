@@ -156,7 +156,7 @@ export const LandingMobile = () => {
                             Usamos
                         </h2>
                         <p className="font-bold">
-                            hola
+                            Tecnologias de desarrollo rapido y eficiente asegurando la mejor calidad para nuestros clientes y sus usuarios
                         </p>
                     </div>
                 </div>
@@ -164,7 +164,7 @@ export const LandingMobile = () => {
                     className="flex flex-col justify-center items-center flex-[4]"
                 >
                     <div
-                        className="flex flex-col items-center h-screen justify-center w-3/4"
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
                             <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
@@ -172,7 +172,7 @@ export const LandingMobile = () => {
                         </div>
                     </div>
                     <div
-                        className="flex flex-col items-center h-screen justify-center w-3/4"
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
                             <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
@@ -180,7 +180,79 @@ export const LandingMobile = () => {
                         </div>
                     </div>
                     <div
-                        className="flex flex-col items-center h-screen justify-center w-3/4"
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
                             <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
