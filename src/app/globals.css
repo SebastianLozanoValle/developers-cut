@@ -620,3 +620,37 @@ input:focus-visible {
     transform: translateX(0%);
   }
 }
+
+@keyframes bote {
+  0%, 75% {
+    transform: none;
+  }
+  87.5% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  100% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bote {
+  animation: bote 3s infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(-20px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-wave {
+  animation: wave 4s infinite;
+}
+

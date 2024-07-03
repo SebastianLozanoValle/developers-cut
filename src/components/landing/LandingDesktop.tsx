@@ -234,7 +234,7 @@ export const LandingDesktop = () => {
                     </div>
                 </div>
                 <div
-                    className="relative flex gap-8 items-start px-16 lg:p-0 lg:w-4/5 mx-auto bg-[#f4f4f4] z-[9]"
+                    className="relative flex gap-8 items-start px-16 lg:p-0 lg:w-4/5 mx-auto bg-[#f4f4f4] z-[1]"
                 >
                     <div
                         className="min-h-screen top-0 sticky flex items-center flex-[3]"
@@ -435,7 +435,9 @@ export const LandingDesktop = () => {
                         </div>
                     </div>
                 </div>
-                <Portfolio />
+                <div className="relative z-[19]">
+                    <Portfolio />
+                </div>
             </div>
         </>
     )

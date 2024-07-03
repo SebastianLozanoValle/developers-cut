@@ -1,9 +1,22 @@
 import { usePortfolio } from "@/store/PortfolioStore"
 import { motion } from "framer-motion"
+import { RxCross2 } from 'react-icons/rx';
 
 export const ProjectCard = ({ children }) => {
 
-    const {currentProject, isChanging} = usePortfolio()
+    const {currentProject, isChanging, setCurrentProject, setIsChanging} = usePortfolio()
+
+    const projectHandler = (project: number) => {
+        if (currentProject !== 100) {
+            setIsChanging(true);
+            setTimeout(() => {
+                setCurrentProject(project);
+                setIsChanging(false);
+            }, 250);
+        } else {
+            setCurrentProject(project);
+        }
+    }
 
     return (
         <motion.div
@@ -16,6 +29,7 @@ export const ProjectCard = ({ children }) => {
         >
             <div className={`hexagon-card`}>
                 <span className="hexagon-card-content">
+                    <button onClick={() => projectHandler(100)}><RxCross2 /></button>
                  {children}
                 </span>
             </div>

@@ -5,10 +5,9 @@ import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { clientSchema, ClientSchemaType } from "@/validations/clientSchema";
 import { FormInput } from "../general/FormInput";
-import PhoneInput, { getCountryCallingCode } from "react-phone-number-input";
+import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css"; // Asegúrate de importar los estilos CSS
 import { RxCross2 } from 'react-icons/rx';
-import { GiHoneycomb } from 'react-icons/gi';
 import Image from 'next/image';
 import { useIsOpenForm } from '@/store/ContactFormStore';
 
