@@ -536,3 +536,84 @@ input:focus-visible {
 .hexagon-item-content strong {
   display: block;
 }
+
+
+
+.hexagon-card {
+  position: relative;
+  display: block;
+  background-color: white;
+  width: calc(110px*4); /* Valor de $hw */
+  height: calc(63.95px*4); /* Valor calculado de $wh */
+  z-index: 1;
+  transition: all 0.5s ease-out;
+  /* transform: rotate(30deg); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento 0, 0 y difuminado de 10px */
+  border-radius: 3px;
+}
+
+/* .hexagon-card:hover, .hexagon-card.active-project {
+  transform: rotate(0deg);
+  background-color: #6C00E6;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+} */
+
+/* .hexagon-card:hover {
+  z-index: 2;
+}
+
+.hexagon-card.active-project{
+  z-index: 3;
+} */
+
+.hexagon-card::after,
+.hexagon-card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  border-radius: 3px;
+}
+
+.hexagon-card::after {
+  transform: rotate(60deg);
+}
+
+.hexagon-card::before {
+  transform: rotate(-60deg);
+}
+
+.hexagon-card-content {
+  position: absolute;
+  z-index: 1000;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+}
+
+.hexagon-card-content strong {
+  display: block;
+}
+
+.portfolio-card-enter {
+  transform: translateX(-500%);
+  animation: showPortfolioCard 1s ease-in-out forwards;
+}
+
+@keyframes showPortfolioCard {
+  to {
+    transform: translateX(0%);
+  }
+}

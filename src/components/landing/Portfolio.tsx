@@ -1,5 +1,6 @@
 import { usePortfolio } from "@/store/PortfolioStore"
 import { PortfolioButton } from "../general/PortfolioButton"
+import { ProjectCard } from "../general/ProjectCard"
 
 export const Portfolio = () => {
 
@@ -117,9 +118,15 @@ export const Portfolio = () => {
                     <div className="flex-1 flex flex-col items-center justify-center min-h-screen transition-all duration-500">
                         {
                             currentProject !== 100 ? (
-                                <div>
-                                    hola soy la ifnormacion del proyecto numero {currentProject}
-                                </div>
+                                <ProjectCard>
+                                    
+                                    <div className="">
+                                        <h2>
+                                            Projecto #{currentProject}
+                                        </h2>
+                                        <p>Este projecto consiste en bla bla bla</p>
+                                    </div>
+                                </ProjectCard>
                             ) : (
                                 <p className="">
                                     Presiona Un Hexagono para ver la informacion de los proyectos aqui.

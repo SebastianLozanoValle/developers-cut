@@ -2,11 +2,18 @@ import { usePortfolio } from "@/store/PortfolioStore"
 
 export const PortfolioButton = ({ children, project = 99 }) => {
 
-    const {currentProject, setCurrentProject} = usePortfolio()
+    const {currentProject, setCurrentProject, setIsChanging} = usePortfolio()
 
     const projectHandler = (project: number) => {
-        setCurrentProject(project)
-        console.log('funcionando')
+        if (currentProject != 100) {
+            setIsChanging(true)
+            setTimeout(() => {
+                setCurrentProject(project)
+                setIsChanging(false)
+            }, 250);
+        } else {
+            setCurrentProject(project)
+        }
     }
 
     return (
