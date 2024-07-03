@@ -86,7 +86,7 @@ export const BlogLanding = () => {
                         Articulos Destacados
                     </h3>
                     <div className="flex items-start gap-5">
-                        <Link href={'/blog/#'} className="flex items-center justify-center w-1/5 m-4">
+                        <Link href={'/blog/#'} className="flex items-center justify-center w-1/5 m-4 p-4 rounded-sm hover:backdrop-blur-sm hover:bg-white/30 transition-all duration-500 ease-in-out">
                             <div className="flex flex-col">
                                 <div className="flex items-center gap-4">
                                     <Link href={'/blog/#'} className="text-blue-700 text-sm font-light">
@@ -99,7 +99,7 @@ export const BlogLanding = () => {
                                 <h3 className="text-xl overflow-y-hidden font-bold">Reportes indican que Wordpress...</h3>
                             </div>
                         </Link>
-                        <Link href={'/blog/#'} className="flex items-center justify-center w-1/5 m-4">
+                        <Link href={'/blog/#'} className="flex items-center justify-center w-1/5 m-4 p-4 rounded-sm hover:backdrop-blur-sm hover:bg-white/30 transition-all duration-500 ease-in-out">
                             <div className="flex flex-col">
                                 <div className="flex items-center gap-4">
                                     <Link href={'/blog/#'} className="text-blue-700 text-sm font-light">
@@ -112,7 +112,7 @@ export const BlogLanding = () => {
                                 <h3 className="text-xl overflow-y-hidden font-bold">Reportes indican que Wordpress...</h3>
                             </div>
                         </Link>
-                        <Link href={'/blog/#'} className="flex items-center justify-center w-1/5 m-4">
+                        <Link href={'/blog/#'} className="flex items-center justify-center w-1/5 m-4 p-4 rounded-sm hover:backdrop-blur-sm hover:bg-white/30 transition-all duration-500 ease-in-out">
                             <div className="flex flex-col">
                                 <div className="flex items-center gap-4">
                                     <Link href={'/blog/#'} className="text-blue-700 text-sm font-light">
