@@ -435,9 +435,7 @@ export const LandingDesktop = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative z-[19]">
-                    <Portfolio />
-                </div>
+                <Portfolio />
             </div>
         </>
     )

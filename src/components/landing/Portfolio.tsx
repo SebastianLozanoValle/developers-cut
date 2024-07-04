@@ -9,8 +9,8 @@ export const Portfolio = () => {
 
     return (
         <div className="overflow-hidden" id="portfolio">
-            <div className="z-[7] relative min-h-screen w-screen bg-[#f4f4f4] pt-20">
-                <div className="z-[7] w-4/5 mx-auto relative flex flex-wrap items-center min-h-screen">
+            <div className="relative min-h-screen w-screen bg-[#f4f4f4] pt-20">
+                <div className="w-4/5 mx-auto relative flex flex-wrap items-center min-h-screen">
                     <div className="z-[1] min-w-[690px] w-full flex flex-col mx-auto">
                         <h2 className="pl-10 text-[#6C00E6] font-extrabold text-6xl">
                             Nuestro Portafolio
