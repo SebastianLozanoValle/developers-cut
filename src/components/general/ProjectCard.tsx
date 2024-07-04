@@ -1,8 +1,13 @@
 import { usePortfolio } from "@/store/PortfolioStore"
 import { motion } from "framer-motion"
+import { ReactNode } from "react";
 import { RxCross2 } from 'react-icons/rx';
 
-export const ProjectCard = ({ children }) => {
+interface ProjectCardProps {
+  children: ReactNode;
+}
+
+export const ProjectCard: React.FC<ProjectCardProps> = ({ children }) => {
 
     const {currentProject, isChanging, setCurrentProject, setIsChanging} = usePortfolio()
 

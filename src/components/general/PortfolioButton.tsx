@@ -1,10 +1,17 @@
 import { usePortfolio } from "@/store/PortfolioStore";
+import { ReactNode } from "react";
 
-export const PortfolioButton = ({ children, project = 99, className = '' }) => {
+interface PortfolioButtonProps {
+  children: ReactNode;
+  project?: number;
+  className?: string;
+}
+
+export const PortfolioButton: React.FC<PortfolioButtonProps> = ({ children, project = 99, className = '' }) => {
 
     const { currentProject, setCurrentProject, setIsChanging } = usePortfolio();
 
-    const projectHandler = (project) => {
+    const projectHandler = (project: number) => {
         if (currentProject !== 100) {
             setIsChanging(true);
             setTimeout(() => {
