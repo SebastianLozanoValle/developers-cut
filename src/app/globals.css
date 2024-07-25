@@ -485,7 +485,7 @@ input:focus-visible {
   border-radius: 3px;
 }
 
-.hexagon-item:hover, .hexagon-item.active-project {
+.no-mobile-portfolio .hexagon-item:hover, .hexagon-item.active-project {
   /* transform: rotate(390deg) translateY(-25%) translateX(-5%); */
   transform: rotate(30deg) translateY(0%) translateX(25%);
   background-color: #6C00E6;
@@ -495,7 +495,7 @@ input:focus-visible {
 }
 
 .decorative-hexagons .hexagon-item {
-  background-color: #2b3550;
+  background-color: #8e9bff;
 }
 
 @keyframes activeHexagon {
@@ -566,7 +566,7 @@ input:focus-visible {
   display: block;
 }
 
-.active-project .hexagon-item-content, .hexagon-item:hover .hexagon-item-content {
+.active-project .hexagon-item-content, .no-mobile-portfolio .hexagon-item:hover .hexagon-item-content {
   opacity: 1;
 }
 

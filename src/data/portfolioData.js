@@ -2,7 +2,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -10,7 +10,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -18,7 +18,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -26,7 +26,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -34,7 +34,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -42,7 +42,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -50,7 +50,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -58,7 +58,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -66,7 +66,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -74,7 +74,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -82,7 +82,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -90,7 +90,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -98,7 +98,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -106,7 +106,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -114,7 +114,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -122,7 +122,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -130,7 +130,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -138,7 +138,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -146,7 +146,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -154,7 +154,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -162,7 +162,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -170,7 +170,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -178,7 +178,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -186,7 +186,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",
@@ -194,7 +194,7 @@ export const portfolioData = [
     {
         name: "Verdeagua",
         url: "https://www.verdeaguanaturals.com/",
-        categorry: "",
+        category: "",
         state: "",
         imagesrc: "",
         description: "Tienda Virtual de Verdeagua naturals",

@@ -21,7 +21,7 @@ export const Portfolio = () => {
                         {/* <h2 className="absolute top-[10px] left-[10px] pl-10 bg-gradient-to-r from-[#8e9bff] to-[#f4f4f4] bg-clip-text text-transparent text-6xl font-extrabold">
                             Nuestro Portafolio
                         </h2> */}
-                        <div className="z-[-1] relative h-[700px] w-[650px]">
+                        <div className="z-[-1] relative h-[700px] w-[650px] no-mobile-portfolio">
                             {/* <div className="w-2/3 flex absolute left-[-200px] top-[-255px]">
                                 <HexagonBackground />
                                 <HexagonBackground />
@@ -256,7 +256,7 @@ export const Portfolio = () => {
                                     </div>
                                 </ProjectCard>
                             ) : (
-                                <p className="">
+                                <p className="text-center">
                                     Presiona Un Hexagono para ver la informacion de los proyectos aqui.
                                 </p>
                             )
