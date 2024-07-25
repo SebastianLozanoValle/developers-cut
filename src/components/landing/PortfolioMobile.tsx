@@ -77,110 +77,110 @@ export const PortfolioMobile = () => {
                         </div>
                         <div className="z-[-1] relative h-[1200px] flex justify-center overflow-x-hidden">
                             <div className="relative">
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px)] top-[calc(60px*0)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px)] top-[calc(60px*0)]">
                                     <HexagonBackground />
                                     <HexagonBackground />
                                     <PortfolioButton project={0} />
                                     <HexagonBackground />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px+100px)] top-[calc(60px*1)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px+100px)] top-[calc(60px*1)]">
                                     <HexagonBackground />
                                     <PortfolioButton project={1} />
                                     <PortfolioButton project={2} />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px)] top-[calc(60px*2)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px)] top-[calc(60px*2)]">
                                     <HexagonBackground />
                                     <HexagonBackground />                                    <PortfolioButton project={3} />
                                     <HexagonBackground />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px+100px)] top-[calc(60px*3)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px+100px)] top-[calc(60px*3)]">
                                     <HexagonBackground />
                                     <PortfolioButton project={4} />
                                     <PortfolioButton project={5} />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px)] top-[calc(60px*4)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px)] top-[calc(60px*4)]">
                                     <HexagonBackground />
                                     <HexagonBackground />
                                     <PortfolioButton project={6} />
                                     <HexagonBackground />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px+100px)] top-[calc(60px*5)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px+100px)] top-[calc(60px*5)]">
                                     <HexagonBackground />
                                     <PortfolioButton project={7} />
                                     <PortfolioButton project={8} />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px)] top-[calc(60px*6)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px)] top-[calc(60px*6)]">
                                     <HexagonBackground />
                                     <HexagonBackground />
                                     <PortfolioButton project={9} />
                                     <HexagonBackground />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px+100px)] top-[calc(60px*7)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px+100px)] top-[calc(60px*7)]">
                                     <HexagonBackground />
                                     <PortfolioButton project={10} />
                                     <PortfolioButton project={11} />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px)] top-[calc(60px*8)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px)] top-[calc(60px*8)]">
                                     <HexagonBackground />
                                     <HexagonBackground />
                                     <PortfolioButton project={12} />
                                     <HexagonBackground />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px+100px)] top-[calc(60px*9)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px+100px)] top-[calc(60px*9)]">
                                     <HexagonBackground />
                                     <PortfolioButton project={13} />
                                     <PortfolioButton project={14} />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px)] top-[calc(60px*10)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px)] top-[calc(60px*10)]">
                                     <HexagonBackground />
                                     <HexagonBackground />
                                     <PortfolioButton project={15} />
                                     <HexagonBackground />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px+100px)] top-[calc(60px*11)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px+100px)] top-[calc(60px*11)]">
                                     <HexagonBackground />
                                     <PortfolioButton project={16} />
                                     <PortfolioButton project={17} />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px)] top-[calc(60px*12)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px)] top-[calc(60px*12)]">
                                     <HexagonBackground />
                                     <HexagonBackground />
                                     <PortfolioButton project={18} />
                                     <HexagonBackground />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px+100px)] top-[calc(60px*13)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px+100px)] top-[calc(60px*13)]">
                                     <HexagonBackground />
                                     <PortfolioButton project={19} />
                                     <PortfolioButton project={20} />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px)] top-[calc(60px*14)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px)] top-[calc(60px*14)]">
                                     <HexagonBackground />
                                     <HexagonBackground />
                                     <PortfolioButton project={21} />
                                     <HexagonBackground />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px+100px)] top-[calc(60px*15)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px+100px)] top-[calc(60px*15)]">
                                     <HexagonBackground />
                                     <PortfolioButton project={22} />
                                     <PortfolioButton project={23} />
                                     <HexagonBackground />
                                 </div>
-                                <div className="w-2/3 flex absolute left-[calc(-506.5px)] top-[calc(60px*16)]">
+                                <div className="w-2/3 flex absolute left-[calc(-500px)] top-[calc(60px*16)]">
                                     <HexagonBackground />
                                     <HexagonBackground />
                                     <PortfolioButton project={24} />
