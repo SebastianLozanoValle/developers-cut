@@ -486,10 +486,35 @@ input:focus-visible {
 }
 
 .hexagon-item:hover, .hexagon-item.active-project {
-  transform: rotate(0deg);
+  /* transform: rotate(390deg) translateY(-25%) translateX(-5%); */
+  transform: rotate(30deg) translateY(0%) translateX(25%);
   background-color: #6C00E6;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada al hacer hover */
+  /* animation: rotacion360 1s linear forwards; */
+  /* animation: activeHexagon 1s linear forwards; */
 }
+
+.decorative-hexagons .hexagon-item {
+  background-color: #2b3550;
+}
+
+@keyframes activeHexagon {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(390deg);
+  }
+}
+
+/* @keyframes rotacion360 {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+} */
 
 .hexagon-item:hover {
   z-index: 2;
@@ -527,17 +552,22 @@ input:focus-visible {
   left: 0;
   right: 0;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, -50%) rotate(-30deg);
   text-align: center;
   font-weight: bold;
   line-height: 25px;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
+  opacity: 0;
+  transition: all ease 0.5s;
 }
 
 .hexagon-item-content strong {
   display: block;
+}
+
+.active-project .hexagon-item-content, .hexagon-item:hover .hexagon-item-content {
+  opacity: 1;
 }
 
 
@@ -553,6 +583,7 @@ input:focus-visible {
   /* transform: rotate(30deg); */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento 0, 0 y difuminado de 10px */
   border-radius: 3px;
+  transform: rotate(30deg);
 }
 
 /* .hexagon-card:hover, .hexagon-card.active-project {
@@ -581,12 +612,14 @@ input:focus-visible {
   border-radius: 3px;
 }
 
-.hexagon-card::after {
+.hexagon-card::before {
   transform: rotate(60deg);
 }
 
-.hexagon-card::before {
+.hexagon-card::after {
   transform: rotate(-60deg);
+  border-right: #6c00e6 4px solid;
+  border-left: #6c00e6 4px solid;
 }
 
 .hexagon-card-content {
@@ -596,14 +629,14 @@ input:focus-visible {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 50%;
+  /* top: 50%; */
   transform: translate(0, -50%);
-  text-align: center;
   font-weight: bold;
   line-height: 25px;
   color: #000;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
+  transform: scale(.8);
+  transform: rotate(-30deg) scale(.9);;
 }
 
 .hexagon-card-content strong {

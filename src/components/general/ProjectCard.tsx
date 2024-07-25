@@ -32,9 +32,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ children }) => {
             transition={{ duration: .25 }}
             className="flex flex-col gap-8"
         >
-            <div className={`hexagon-card`}>
-                <span className="hexagon-card-content">
-                    <button onClick={() => projectHandler(100)}><RxCross2 /></button>
+            <div className={`hexagon-card h-full`}>
+                <span className="hexagon-card-content h-full">
+                    <button className="absolute top-0 right-0" onClick={() => projectHandler(100)}><RxCross2 /></button>
                  {children}
                 </span>
             </div>

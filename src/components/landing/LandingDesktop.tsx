@@ -141,7 +141,7 @@ export const LandingDesktop = () => {
                 <motion.div
                 className='flex'
                 >
-                <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pl-[10vw]">
+                <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] py-20 bg-[#F4F4F4] flex justify-center items-center lg:pl-[10vw]">
                     <div className='flex flex-col gap-8 w-3/4'>
                         <h2 className="font-bold text-black text-[30px] capitalize">Tu presencia en la web hace la diferencia</h2>
                         <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
@@ -174,7 +174,7 @@ export const LandingDesktop = () => {
                 </div>
                 </motion.div>
                 <div className='flex'>
-                    <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pl-[10vw]">
+                    <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] py-20 bg-[#F4F4F4] flex justify-center items-center lg:pl-[10vw]">
                         <div className='flex flex-col gap-8 w-3/4'>
                             <h2 className="font-bold text-black text-[30px] capitalize">No logras llegar a tus clientes? <br/> marketing es la respuesta</h2>
                             <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
@@ -204,7 +204,7 @@ export const LandingDesktop = () => {
                     <div className="w-1/2 min-h-[calc(100vh-92px)] bg-[#8E9BFF]">
                         
                     </div>
-                    <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] flex justify-center items-center lg:pr-[10vw]">
+                    <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] py-20 flex justify-center items-center lg:pr-[10vw]">
                         <motion.div className='flex flex-col gap-8 w-3/4'>
                             <h2 className="font-bold text-black text-[30px] capitalize">Soluciones dinamicas para las empresas del mañana</h2>
                             <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
@@ -234,7 +234,7 @@ export const LandingDesktop = () => {
                     </div>
                 </div>
                 <div
-                    className="relative flex gap-8 items-start px-16 lg:p-0 lg:w-4/5 mx-auto bg-[#f4f4f4] z-[1]"
+                    className="relative flex gap-8 items-start px-16 py-20 lg:px-0 lg:w-4/5 mx-auto bg-[#f4f4f4] z-[1]"
                 >
                     <div
                         className="min-h-screen top-0 sticky flex items-center flex-[3]"
