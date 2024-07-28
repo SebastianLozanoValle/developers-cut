@@ -2,8 +2,10 @@ import { FaPencilAlt, FaWhatsapp } from "react-icons/fa"
 import { GiHoneycomb } from "react-icons/gi"
 import { ContactForm } from "../forms/ContactForm"
 import { useIsOpenForm } from "@/store/ContactFormStore"
-import { SiNextdotjs } from "react-icons/si"
+import { SiNextdotjs, SiWoo } from "react-icons/si"
 import { PortfolioMobile } from "./PortfolioMobile"
+import { FaApple, FaCss3Alt, FaHtml5, FaJava, FaReact, FaShopify, FaWix, FaWordpressSimple } from "react-icons/fa6"
+import { IoLogoAndroid } from "react-icons/io"
 
 export const LandingMobile = () => {
 
@@ -178,8 +180,32 @@ export const LandingMobile = () => {
                         className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
+                            <FaHtml5 className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <FaCss3Alt className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <FaReact className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>React</span>
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
+                    >
+                        <div className="flex flex-col items-center justify-around">
+                            <FaJava className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Java</span>
                         </div>
                     </div>
                     <div
@@ -194,80 +220,48 @@ export const LandingMobile = () => {
                         className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
+                            <IoLogoAndroid className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Andorid</span>
                         </div>
                     </div>
                     <div
                         className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
+                            <FaApple className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Apple</span>
                         </div>
                     </div>
                     <div
                         className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
+                            <FaWordpressSimple className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Wordpress</span>
                         </div>
                     </div>
                     <div
                         className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
+                            <FaShopify className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Shopify</span>
                         </div>
                     </div>
                     <div
                         className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
+                            <SiWoo className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>WooCommerce</span>
                         </div>
                     </div>
                     <div
                         className="flex flex-col items-center h-[33vh] justify-center w-3/4"
                     >
                         <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
-                        </div>
-                    </div>
-                    <div
-                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
-                    >
-                        <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
-                        </div>
-                    </div>
-                    <div
-                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
-                    >
-                        <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
-                        </div>
-                    </div>
-                    <div
-                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
-                    >
-                        <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
-                        </div>
-                    </div>
-                    <div
-                        className="flex flex-col items-center h-[33vh] justify-center w-3/4"
-                    >
-                        <div className="flex flex-col items-center justify-around">
-                            <SiNextdotjs className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>Next.js</span>
+                            <FaWix className="rounded-full p-2 text-6xl text-black border-4 border-black" />
+                            <span>Wix</span>
                         </div>
                     </div>
                 </div>
