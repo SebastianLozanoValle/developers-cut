@@ -253,7 +253,7 @@ export const LandingMobile = () => {
                     >
                         <div className="flex flex-col items-center justify-around">
                             <SiWoo className="rounded-full p-2 text-6xl text-black border-4 border-black" />
-                            <span>WooCommerce</span>
+                            <span className="text-center">Woo Commerce</span>
                         </div>
                     </div>
                     <div
