@@ -47,21 +47,24 @@ export const LandingMobile = () => {
                 <div className="flex justify-center bg-[#1B2132] text-white py-20">
                     <div className='flex flex-col gap-8 w-3/4'>
                         <h2 className="font-bold text-[30px] capitalize">Tu presencia en la web hace la diferencia</h2>
-                        <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
+                        <ul className="list-disc list-inside flex flex-col gap-6 capitalize">
                             <li>
-                            54% mas engagement.
+                            <span className="font-bold">Adaptadas a tus Necesidades:</span> Ofrecemos desarrollo a medida que se ajusta perfectamente a tus requisitos y objetivos específicos.
                             </li>
                             <li>
-                            90% tasa de retencion del publico objetivo.
+                            <span className="font-bold">Escalabilidad:</span> Nuestras soluciones están diseñadas para crecer junto a tu negocio, permitiendo una fácil expansión y adaptación.
                             </li>
                             <li>
-                            80% tasa de conversion en ventas.
+                            <span className="font-bold">Ahorro de Tiempo y Recursos:</span> Nuestros servicios te permiten enfocarte en tu negocio principal mientras nos encargamos de las soluciones tecnológicas.
                             </li>
                             <li>
-                            tu propio sitio en la red en poco tiempo a largo plazo.
+                            <span className="font-bold">Mejora de Procesos:</span> Implementamos sistemas que optimizan tus operaciones, mejorando la eficiencia y reduciendo costos.
                             </li>
                             <li>
-                            tu marca es importante y nosotros lo sabemos, personalizacion a la medida.
+                            <span className="font-bold">Asistencia Permanente:</span> Ofrecemos soporte técnico continuo para asegurarnos de que tus sistemas funcionen sin problemas en todo momento.
+                            </li>
+                            <li>
+                            Mantenemos tus soluciones actualizadas con las últimas mejoras y parches de seguridad.
                             </li>
                         </ul>
                         <div className="flex justify-center">
