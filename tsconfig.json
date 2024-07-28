@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/app/api/sendemail/route.js"  ],
   "exclude": [
     "node_modules"
   ]

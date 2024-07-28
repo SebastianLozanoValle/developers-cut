@@ -118,63 +118,63 @@ export const Portfolio = () => {
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-200px] top-[-15px]">
                                     <HexagonBackground />
-                                    <PortfolioButton project={0} />
-                                    <PortfolioButton project={1} />
+                                    <PortfolioButton project={0} src={portfolioData[0].imagesrc} />
+                                    <PortfolioButton project={1} src={portfolioData[1].imagesrc} />
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-300px] top-[45px]">
                                     <HexagonBackground />
                                     <HexagonBackground />
-                                    <PortfolioButton project={2} />
-                                    <PortfolioButton project={3} />
+                                    <PortfolioButton project={2} src={portfolioData[2].imagesrc} />
+                                    <PortfolioButton project={3} src={portfolioData[3].imagesrc} />
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-200px] top-[105px]">
                                     <HexagonBackground />
-                                    <PortfolioButton project={4} />
-                                    <PortfolioButton project={5} />
-                                    <PortfolioButton project={6} />
+                                    <PortfolioButton project={4} src={portfolioData[4].imagesrc} />
+                                    <PortfolioButton project={5} src={portfolioData[5].imagesrc} />
+                                    <PortfolioButton project={6} src={portfolioData[6].imagesrc} />
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-300px] top-[165px]">
                                     <HexagonBackground />
                                     <HexagonBackground />
-                                    <PortfolioButton project={7} />
-                                    <PortfolioButton project={8} />
-                                    <PortfolioButton className={`${currentProject == 100 && 'animate-bote'}`} project={9} />
+                                    <PortfolioButton project={7} src={portfolioData[7].imagesrc} />
+                                    <PortfolioButton project={8} src={portfolioData[8].imagesrc} />
+                                    <PortfolioButton className={`${currentProject == 100 && 'animate-bote'}`} project={9} src={portfolioData[9].imagesrc} />
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-200px] top-[225px]">
                                     <HexagonBackground />
-                                    <PortfolioButton project={10} />
-                                    <PortfolioButton project={11} />
-                                    <PortfolioButton project={12} />
+                                    <PortfolioButton project={10} src={portfolioData[10].imagesrc} />
+                                    <PortfolioButton project={11} src={portfolioData[11].imagesrc} />
+                                    <PortfolioButton project={12} src={portfolioData[12].imagesrc} />
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-300px] top-[285px]">
                                     <HexagonBackground />
                                     <HexagonBackground />
-                                    <PortfolioButton project={13} />
-                                    <PortfolioButton project={14} />
+                                    <PortfolioButton project={13} src={portfolioData[13].imagesrc} />
+                                    <PortfolioButton project={14} src={portfolioData[14].imagesrc} />
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-200px] top-[345px]">
                                     <HexagonBackground />
-                                    <PortfolioButton project={15} />
-                                    <PortfolioButton project={16} />
+                                    <PortfolioButton project={15} src={portfolioData[15].imagesrc} />
+                                    <PortfolioButton project={16} src={portfolioData[16].imagesrc} />
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-300px] top-[405px]">
                                     <HexagonBackground />
                                     <HexagonBackground />
-                                    <PortfolioButton project={17} />
-                                    <PortfolioButton project={18} />
+                                    <PortfolioButton project={17} src={portfolioData[17].imagesrc} />
+                                    <PortfolioButton project={18} src={portfolioData[18].imagesrc} />
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-200px] top-[465px]">
                                     <HexagonBackground />
-                                    <PortfolioButton project={19} />
-                                    <PortfolioButton project={20} />
-                                    <PortfolioButton project={21} />
+                                    <PortfolioButton project={19} src={portfolioData[19].imagesrc} />
+                                    <PortfolioButton project={20} src={portfolioData[20].imagesrc} />
+                                    <PortfolioButton project={21} src={portfolioData[21].imagesrc} />
                                 </div>
                                 <div className="w-2/3 flex absolute left-[-300px] top-[525px]">
                                     <HexagonBackground />
                                     <HexagonBackground />
-                                    <PortfolioButton project={22} />
-                                    <PortfolioButton project={23} />
-                                    <PortfolioButton project={24} />
+                                    <PortfolioButton project={22} src={portfolioData[22].imagesrc} />
+                                    <PortfolioButton project={23} src={portfolioData[23].imagesrc} />
+                                    <PortfolioButton project={24} src={portfolioData[24].imagesrc} />
                                 </div>
                             </div>
                             {/* <div className="w-2/3 flex absolute left-[-200px] top-[585px]">
@@ -212,9 +212,9 @@ export const Portfolio = () => {
                                 <ProjectCard>
                                     <div className="h-full">
                                         <div className="flex py-4">
-                                            <div className="relative w-[242px] h-[150px] overflow-hidden rounded">
+                                            <a href={portfolioData[currentProject].url} target="_blank" className="relative w-[242px] h-[150px] overflow-hidden rounded">
                                                 <Image 
-                                                    src="/imaginatrips.png"
+                                                    src={portfolioData[currentProject].imagesrc}
                                                     alt="Background Image"
                                                     layout="fill"
                                                     objectFit="cover"
@@ -222,7 +222,7 @@ export const Portfolio = () => {
                                                     className="absolute top-0 left-0 w-full h-full"
                                                 />
                                                 <span className="relative">
-                                                    <span className="ml-1 bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Finalizado</span>
+                                                    <span className="ml-1 bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">{portfolioData[currentProject].state}</span>
                                                     <span className="absolute top-[2px] right-[2px]">
                                                     <span className="relative flex h-3 w-3">
                                                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
@@ -230,27 +230,27 @@ export const Portfolio = () => {
                                                     </span>
                                                     </span>
                                                 </span>
-                                            </div>
+                                            </a>
                                             <div className="flex-1 px-4 text-slate-500 flex flex-col justify-around">
                                                 <div className="flex gap-2 items-center">
                                                     <div className="p-1 border rounded-full border-slate-500">
                                                         <FaGear />
                                                     </div>
-                                                    <h3 className="font-extrabold">Landing Page</h3>
+                                                    <h3 className="font-extrabold">{portfolioData[currentProject].category}</h3>
                                                 </div>
                                                 <div className='button w-full h-8 mx-auto bg-[#6c00e6] rounded-lg cursor-pointer select-none
                                                     hover:translate-y-2 hover:[box-shadow:0_0px_0_0_#4a00b3,0_0px_0_0_#4a00b341]
                                                     hover:border-b-[0px]
                                                     transition-all duration-150 [box-shadow:0_10px_0_0_#4a00b3,0_15px_0_0_#4a00b341]
                                                     border-b-[1px] border-[#4a00b3]'>
-                                                    <span className='flex flex-col justify-center items-center h-full text-white font-bold text-lg'>Visitar Web</span>
+                                                    <a href={portfolioData[currentProject].url} target="_blank" className='flex flex-col justify-center items-center h-full text-white font-bold text-lg'>Visitar Web</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="p-1">
-                                            <h4 className="font-extrabold">{portfolioData[currentProject].name}{currentProject}</h4>
+                                            <h4 className="font-extrabold">{portfolioData[currentProject].name}</h4>
                                             <p className="font-light text-sm text-slate-500">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente
+                                                {portfolioData[currentProject].description}
                                             </p>
                                         </div>
                                     </div>

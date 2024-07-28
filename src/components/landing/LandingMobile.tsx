@@ -19,8 +19,8 @@ export const LandingMobile = () => {
                     className="relative z-[9] flex justify-center items-center min-h-[345px] bg-[#6C00E6]"
                 >
                         <div className="flex flex-col items-center gap-4 w-3/4">
-                            <h1 className="font-bold text-4xl text-white text-center text-[40px]">SLE te impulsa</h1>
-                            <p className="text-[28px] text-white text-center">lleva tu empresa a nuevos horizontes con nosotros</p>
+                            <h1 className="font-bold text-4xl text-white text-center text-[40px]">SLE</h1>
+                            <p className="text-[28px] text-white text-center">Creando experiencias digitales excepcionales para impulsar tu éxito empresarial.</p>
                         </div>
                 </div>
                 <div className="flex w-screen justify-center h-[150px] overflow-y-hidden pt-8">
@@ -30,8 +30,8 @@ export const LandingMobile = () => {
                         <div className="btn3"></div>
                         <div className="btn4"></div>
                         <div className="card-int">
-                            <div className="hello">telefono
-                            <span className="hidden">SLE</span>
+                            <div className="hello">Aplicaciones
+                            <span className="hidden">A Tu Medida</span>
                             </div>
                         </div>
                         <div className="top">
@@ -63,25 +63,35 @@ export const LandingMobile = () => {
                             </li>
                         </ul>
                         <div className="flex justify-center">
-                            <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            {/* <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
                             <FaPencilAlt className="text-2xl capitalize" />
                             Contactanos
-                            </button>
+                            </button> */}
+                            <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            <FaPencilAlt className="text-2xl capitalize" />
+                            Contactanos
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div className="flex justify-center bg-[#2B3550] text-white py-20">
                     <div className='flex flex-col gap-8 w-3/4'>
                         <h2 className="font-bold text-[30px] capitalize">No logras llegar a tus clientes? <br/> marketing es la respuesta</h2>
-                        <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
+                        <ul className="list-disc list-inside flex flex-col gap-6 capitalize">
                             <li>
-                            Conoce nuestras estrategias de marketing digital y sumergete en el mundo de los ads.
+                            Desarrollamos sitios web optimizados para motores de búsqueda, mejorando tu ranking y asegurando que tu negocio sea más visible para clientes potenciales.
                             </li>
                             <li>
-                            90% tasa de retencion del publico objetivo.
+                            Implementamos estrategias de contenido que atraen tráfico orgánico de alta calidad y aumentan la relevancia de tu sitio.
                             </li>
                             <li>
-                            80% tasa de conversion en ventas.
+                            Utilizamos herramientas de análisis para monitorear el comportamiento de los usuarios y ajustar estrategias para maximizar la retención.
+                            </li>
+                            <li>
+                            Ofrecemos servicios integrales de marketing digital, incluyendo SEO, SEM, publicidad en redes sociales y email marketing, para aumentar tu alcance y atraer más clientes.
+                            </li>
+                            <li>
+                            <span className="font-bold">Expansión de Alcance:</span> Implementamos estrategias que permiten expandir tu presencia en el mercado global, llegando a una audiencia más amplia.
                             </li>
                         </ul>
                         <div className="flex justify-center gap-8 capitalize">
@@ -89,9 +99,13 @@ export const LandingMobile = () => {
                             <FaWhatsapp className="text-2xl" />
                             Contactanos
                             </a>
-                            <a href="#" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            {/* <a href="#" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
                             <FaPencilAlt className="text-1xl" />
                             asesorate
+                            </a> */}
+                            <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            <FaPencilAlt className="text-2xl capitalize" />
+                            Asesorate
                             </a>
                         </div>
                     </div>
@@ -103,8 +117,8 @@ export const LandingMobile = () => {
                         <div className="btn3"></div>
                         <div className="btn4"></div>
                         <div className="card-int">
-                            <div className="hello">telefono
-                            <span className="hidden">SLE</span>
+                            <div className="hello">A tu
+                            <span className="hidden">Alcance</span>
                             </div>
                         </div>
                         <div className="top">
@@ -117,26 +131,20 @@ export const LandingMobile = () => {
                 </div>
                 <div className="flex justify-center bg-[#8E9BFF] text-white py-20">
                     <div className='flex flex-col gap-8 w-3/4'>
-                        <h2 className="font-bold text-[30px] capitalize">Soluciones dinamicas para las empresas del mañana</h2>
-                        <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
+                        <h2 className="font-bold text-[30px] capitalize">Soluciones Con seguridad, Software de calidad</h2>
+                        <ul className="list-disc list-inside flex flex-col gap-6 capitalize">
                             <li>
-                            Desarrollo Web WordPres o nativo.
+                            Garantizamos un desarrollo de primera con pruebas rigurosas para asegurar un rendimiento y experiencia de usuario excepcionales.
                             </li>
                             <li>
-                            Desarrollo de Aplicaciones Moviles.
+                            Utilizamos las mejores prácticas y tecnologías avanzadas para proteger tus sistemas y datos contra amenazas.
                             </li>
                             <li>
-                            Soluciones de software empresarial.
-                            </li>
-                            <li>
-                            Diseño UX/UI.
-                            </li>
-                            <li>
-                            Ponemos nuestro conocimiento y expertis a tu disposicion.
+                            Aseguramos que nuestras soluciones cumplan con todas las regulaciones de seguridad y privacidad.
                             </li>
                         </ul>
                         <div className="flex justify-center">
-                            <a href="#" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-purple-600 transition-all duration-500 active:bg-purple-800">
+                            <a href="#portfolio" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-purple-600 transition-all duration-500 active:bg-purple-800">
                             <GiHoneycomb className="text-2xl capitalize" />
                             nuestras soluciones
                             </a>

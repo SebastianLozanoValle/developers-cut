@@ -26,7 +26,7 @@ export const PortfolioMobile = () => {
                                                 <div className="flex py-4">
                                                     <div className="relative w-[242px] h-[150px] overflow-hidden rounded">
                                                         <Image 
-                                                            src="/imaginatrips.png"
+                                                            src={portfolioData[currentProject].imagesrc}
                                                             alt="Background Image"
                                                             layout="fill"
                                                             objectFit="cover"
@@ -34,7 +34,7 @@ export const PortfolioMobile = () => {
                                                             className="absolute top-0 left-0 w-full h-full"
                                                         />
                                                         <span className="relative">
-                                                            <span className="ml-1 bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Finalizado</span>
+                                                            <span className="ml-1 bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">{portfolioData[currentProject].state}</span>
                                                             <span className="absolute top-[2px] right-[2px]">
                                                             <span className="relative flex h-3 w-3">
                                                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
@@ -48,21 +48,21 @@ export const PortfolioMobile = () => {
                                                             <div className="p-1 border rounded-full border-slate-500">
                                                                 <FaGear />
                                                             </div>
-                                                            <h3 className="font-extrabold">Landing Page</h3>
+                                                            <h3 className="font-extrabold">{portfolioData[currentProject].category}</h3>
                                                         </div>
                                                         <div className='button w-full h-8 mx-auto bg-[#6c00e6] rounded-lg cursor-pointer select-none
                                                             hover:translate-y-2 hover:[box-shadow:0_0px_0_0_#4a00b3,0_0px_0_0_#4a00b341]
                                                             hover:border-b-[0px]
                                                             transition-all duration-150 [box-shadow:0_10px_0_0_#4a00b3,0_15px_0_0_#4a00b341]
                                                             border-b-[1px] border-[#4a00b3]'>
-                                                            <span className='flex flex-col justify-center items-center h-full text-white font-bold text-lg'>Visitar Web</span>
+                                                            <a  href={portfolioData[currentProject].url} target="_blank" className='flex flex-col justify-center items-center h-full text-white font-bold text-lg'>Visitar Web</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div className="p-1">
-                                                    <h4 className="font-extrabold">{portfolioData[currentProject].name}{currentProject}</h4>
+                                                    <h4 className="font-extrabold">{portfolioData[currentProject].name}</h4>
                                                     <p className="font-light text-sm text-slate-500">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente
+                                                    {portfolioData[currentProject].description}
                                                     </p>
                                                 </div>
                                             </div>

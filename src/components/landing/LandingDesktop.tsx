@@ -68,8 +68,9 @@ export const LandingDesktop = () => {
                 onViewportEnter={()=> handlerScrolledBanner(false)}
             >
                 <div className="flex flex-col items-center gap-4 w-3/4">
-                <h1 className="font-bold text-4xl text-white text-center text-[40px]">SLE te impulsa</h1>
-                <p className="text-[28px] text-white text-center">lleva tu empresa a nuevos horizontes con nosotros</p>
+                <h1 className="font-bold text-4xl text-white text-center text-[40px]">SLE</h1>
+                <p className="text-[28px] text-white text-center">Creando experiencias digitales excepcionales para impulsar tu éxito empresarial.
+                </p>
                 </div>
             </motion.div>
             {/* inicio de seccion desktop */}
@@ -97,8 +98,8 @@ export const LandingDesktop = () => {
                         <div className="btn3"></div>
                         <div className="btn4"></div>
                         <div className="card-int">
-                            <div className="hello">telefono
-                            <span className="hidden">SLE</span>
+                            <div className="hello">Apps
+                            <span className="hidden">A Tu Medida</span>
                             </div>
                         </div>
                         <div className="top">
@@ -126,8 +127,8 @@ export const LandingDesktop = () => {
                     <div className="btn3"></div>
                     <div className="btn4"></div>
                     <div className="card-int">
-                        <div className="hello">computador
-                        <span className="hidden">SLE</span>
+                        <div className="hello">A tu
+                        <span className="hidden">Alcance</span>
                         </div>
                     </div>
                     <div className="top">
@@ -144,28 +145,35 @@ export const LandingDesktop = () => {
                 <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] py-20 bg-[#F4F4F4] flex justify-center items-center lg:pl-[10vw]">
                     <div className='flex flex-col gap-8 w-3/4'>
                         <h2 className="font-bold text-black text-[30px] capitalize">Tu presencia en la web hace la diferencia</h2>
-                        <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
+                        <ul className="list-disc list-inside flex flex-col gap-6 capitalize">
                             <li>
-                            54% mas engagement.
+                            <span className="font-bold">Adaptadas a tus Necesidades:</span> Ofrecemos desarrollo a medida que se ajusta perfectamente a tus requisitos y objetivos específicos.
                             </li>
                             <li>
-                            90% tasa de retencion del publico objetivo.
+                            <span className="font-bold">Escalabilidad:</span> Nuestras soluciones están diseñadas para crecer junto a tu negocio, permitiendo una fácil expansión y adaptación.
                             </li>
                             <li>
-                            80% tasa de conversion en ventas.
+                            <span className="font-bold">Ahorro de Tiempo y Recursos:</span> Nuestros servicios te permiten enfocarte en tu negocio principal mientras nos encargamos de las soluciones tecnológicas.
                             </li>
                             <li>
-                            tu propio sitio en la red en poco tiempo a largo plazo.
+                            <span className="font-bold">Mejora de Procesos:</span> Implementamos sistemas que optimizan tus operaciones, mejorando la eficiencia y reduciendo costos.
                             </li>
                             <li>
-                            tu marca es importante y nosotros lo sabemos, personalizacion a la medida.
+                            <span className="font-bold">Asistencia Permanente:</span> Ofrecemos soporte técnico continuo para asegurarnos de que tus sistemas funcionen sin problemas en todo momento.
+                            </li>
+                            <li>
+                            Mantenemos tus soluciones actualizadas con las últimas mejoras y parches de seguridad.
                             </li>
                         </ul>
                         <div className="flex justify-center">
-                            <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
+                            {/* <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
                             <FaPencilAlt className="text-2xl capitalize" />
                             Contactanos
-                            </button>
+                            </button> */}
+                            <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            <FaPencilAlt className="text-2xl capitalize" />
+                            Contactanos
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -177,22 +185,32 @@ export const LandingDesktop = () => {
                     <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] py-20 bg-[#F4F4F4] flex justify-center items-center lg:pl-[10vw]">
                         <div className='flex flex-col gap-8 w-3/4'>
                             <h2 className="font-bold text-black text-[30px] capitalize">No logras llegar a tus clientes? <br/> marketing es la respuesta</h2>
-                            <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
+                            <ul className="list-disc list-inside flex flex-col gap-6 capitalize">
                                 <li>
-                                Conoce nuestras estrategias de marketing digital y sumergete en el mundo de los ads.
+                                Desarrollamos sitios web optimizados para motores de búsqueda, mejorando tu ranking y asegurando que tu negocio sea más visible para clientes potenciales.
                                 </li>
                                 <li>
-                                90% tasa de retencion del publico objetivo.
+                                Implementamos estrategias de contenido que atraen tráfico orgánico de alta calidad y aumentan la relevancia de tu sitio.
                                 </li>
                                 <li>
-                                80% tasa de conversion en ventas.
+                                Utilizamos herramientas de análisis para monitorear el comportamiento de los usuarios y ajustar estrategias para maximizar la retención.
+                                </li>
+                                <li>
+                                Ofrecemos servicios integrales de marketing digital, incluyendo SEO, SEM, publicidad en redes sociales y email marketing, para aumentar tu alcance y atraer más clientes.
+                                </li>
+                                <li>
+                                <span className="font-bold">Expansión de Alcance:</span> Implementamos estrategias que permiten expandir tu presencia en el mercado global, llegando a una audiencia más amplia.
                                 </li>
                             </ul>
                             <div className="flex justify-center">
-                                <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
+                                {/* <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
                                 <FaPencilAlt className="text-1xl" />
-                                asesorate
-                                </button>
+                                Asesorate
+                                </button> */}
+                            <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            <FaPencilAlt className="text-2xl capitalize" />
+                            Asesorate
+                            </a>
                             </div>
                         </div>
                     </div>
@@ -206,26 +224,20 @@ export const LandingDesktop = () => {
                     </div>
                     <div className="z-[7] w-1/2 min-h-[calc(100vh-92px)] bg-[#F4F4F4] py-20 flex justify-center items-center lg:pr-[10vw]">
                         <motion.div className='flex flex-col gap-8 w-3/4'>
-                            <h2 className="font-bold text-black text-[30px] capitalize">Soluciones dinamicas para las empresas del mañana</h2>
-                            <ul className="list-disc list-inside font-bold flex flex-col gap-6 capitalize">
+                            <h2 className="font-bold text-black text-[30px] capitalize">Soluciones Con seguridad, Software de calidad</h2>
+                            <ul className="list-disc list-inside flex flex-col gap-6 capitalize">
                                 <li>
-                                Desarrollo Web WordPres o nativo.
+                                Garantizamos un desarrollo de primera con pruebas rigurosas para asegurar un rendimiento y experiencia de usuario excepcionales.
                                 </li>
                                 <li>
-                                Desarrollo de Aplicaciones Moviles.
+                                Utilizamos las mejores prácticas y tecnologías avanzadas para proteger tus sistemas y datos contra amenazas.
                                 </li>
                                 <li>
-                                Soluciones de software empresarial.
-                                </li>
-                                <li>
-                                Diseño UX/UI.
-                                </li>
-                                <li>
-                                Ponemos nuestro conocimiento y expertis a tu disposicion.
+                                Aseguramos que nuestras soluciones cumplan con todas las regulaciones de seguridad y privacidad.
                                 </li>
                             </ul>
                             <div className="flex justify-center">
-                                <a href="#" className="text-white px-4 py-2 font-bold flex gap-2 items-center sle-btn">
+                                <a href="#portfolio" className="text-white px-4 py-2 font-bold flex gap-2 items-center sle-btn">
                                 <GiHoneycomb className="text-2xl capitalize" />
                                 nuestras soluciones
                                 </a>
