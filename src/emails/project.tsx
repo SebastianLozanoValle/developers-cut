@@ -14,9 +14,10 @@ import {
   } from "@react-email/components";
   import * as React from "react";
   
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
+//   const baseUrl = process.env.VERCEL_URL
+//     ? `https://${process.env.VERCEL_URL}`
+//     : "http://localhost:3000";
+  const baseUrl = "https://www.sledevelopment.com"
 
     const today = new Date();
 
