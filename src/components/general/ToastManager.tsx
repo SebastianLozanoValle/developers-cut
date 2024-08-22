@@ -54,4 +54,6 @@ const ToastManager = forwardRef<ToastManagerHandle, ToastManagerProps>(({ durati
     );
 });
 
+ToastManager.displayName = 'ToastManager';
+
 export default ToastManager;
