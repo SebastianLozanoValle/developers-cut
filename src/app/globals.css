@@ -686,4 +686,8 @@ input:focus-visible {
 .animate-wave {
   animation: wave 4s infinite;
 }
-
+/* Clase para la animación de desvanecimiento */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; /* Duración de la animación */
+}

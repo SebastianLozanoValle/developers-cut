@@ -14,6 +14,7 @@ export async function POST(req: NextRequest) {
         const { data, error } = await resend.emails.send({
             from: 'noreplay@sledevelopment.com',
             to: ['sebastian.lozano@sledevelopment.com', 'juan.estupinan@sledevelopment.com', 'martin.sandoval@sledevelopment.com'],
+            // to: ['cesarloco2003@hotmail.com'],
             subject: 'SLE Development ContactForm',
             react: ProjectEmail({name: body.name, country: body.country, email: body.country, message: body.message, phone: body.phone }),
           });

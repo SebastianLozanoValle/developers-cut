@@ -9,14 +9,20 @@ import 'react-phone-number-input/style.css'; // Asegúrate de importar los estil
 import { RxCross2 } from 'react-icons/rx';
 import Image from 'next/image';
 import { useIsOpenForm } from '@/store/ContactFormStore';
+import { useToast } from '@/providers/ToastContext';
+import { DefaultSpinner } from '../general/DefaultSpinner';
 
 export const ContactForm = () => {
+
+    const { addToast } = useToast();
+
     const { control, register, handleSubmit, formState: { errors } } = useForm<ClientSchemaType>({
         resolver: zodResolver(clientSchema),
     });
 
     const { openCloseForm } = useIsOpenForm();
     const [closing, setClosing] = useState(false);
+    const [submitAbailable, setSubmitAbailable] = useState(true);
 
     const handleClose = () => {
         setClosing(true);
@@ -27,6 +33,10 @@ export const ContactForm = () => {
 
     const onSubmit = async (data: ClientSchemaType) => {
         try {
+            
+            setSubmitAbailable(false)
+            addToast('loading', 'Enviando formulario');
+
             const response = await fetch('/api/send', {
                 method: 'POST',
                 headers: {
@@ -40,14 +50,19 @@ export const ContactForm = () => {
             }
 
             const result = await response.json();
-            alert(result.message || 'Correo enviado exitosamente');
+            // alert(result.message || 'Correo enviado exitosamente');
+            addToast('ok', 'Formulario enviado satisfactoriamente');
+            setSubmitAbailable(true)
+            handleClose()
         } catch (error: any) {
-            alert(error.message || 'Error al enviar el correo');
+            // alert(error.message || 'Error al enviar el correo');
+            addToast('error', 'Error al enviar el formulario');
+            setSubmitAbailable(true)
         }
     };
 
     return (
-        <div className={`flex flex-col pt-20 items-center contact-form z-[9900] top-[92px] h-screen w-screen backdrop-blur-sm bg-gray-400/30 gap-4 ${closing ? 'hide-form' : ''}`}>
+        <div className={`flex flex-col pt-20 items-center contact-form z-[900] top-[92px] h-screen w-screen backdrop-blur-sm bg-gray-400/30 gap-4 ${closing ? 'hide-form' : ''}`}>
             <form
                 className="relative flex flex-wrap w-auto justify-center bg-white p-[40px] gap-[20px] rounded-xl max-h-[60vh] overflow-y-scroll max-w-[80vw]"
                 onSubmit={handleSubmit(onSubmit)}
@@ -108,10 +123,14 @@ export const ContactForm = () => {
                             </p>
                         )}
                     </div>
-                    <div className='relative group'>
-                        <div className='absolute z-[0] h-full w-full bg-[#6c00e6] right-0 group-hover:w-0 transition-all duration-500 ease-in-out'></div>
-                        <button className='relative z-[1] text-white px-4 py-2 font-bold flex gap-2 items-center group-hover:text-black transition-all duration-500 ease-in-out' type="submit">Enviar</button>
-                    </div>
+                    {
+                        submitAbailable ?
+                        <div className='relative group'>
+                            <div className='absolute z-[0] h-full w-full bg-[#6c00e6] right-0 group-hover:w-0 transition-all duration-500 ease-in-out'></div>
+                            <button className='relative z-[1] text-white px-4 py-2 font-bold flex gap-2 items-center group-hover:text-black transition-all duration-500 ease-in-out' type="submit">Enviar</button>
+                        </div>
+                        : <div className='flex justify-center w-full'><DefaultSpinner /></div>
+                    }
                 </div>
                 <div className='flex flex-col items-center justify-center gap-[20px] p-[20px] max-w-[300px]'>
                     <Image src="/logo.svg" alt="logo" width={150} height={100} />
