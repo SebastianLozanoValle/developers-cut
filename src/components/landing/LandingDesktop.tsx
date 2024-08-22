@@ -55,9 +55,9 @@ export const LandingDesktop = () => {
 
     return(
         <>
-            {
+            {/* {
                 isOpen && <ContactForm />
-            }
+            } */}
             {/* <ContactForm /> */}
             <motion.div
                 className="relative z-[9] flex justify-center items-center min-h-[345px] bg-[#6C00E6]"
@@ -203,14 +203,14 @@ export const LandingDesktop = () => {
                                 </li>
                             </ul>
                             <div className="flex justify-center">
-                                {/* <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
+                                <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
                                 <FaPencilAlt className="text-1xl" />
                                 Asesorate
-                                </button> */}
-                            <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
-                            <FaPencilAlt className="text-2xl capitalize" />
-                            Asesorate
-                            </a>
+                                </button>
+                                {/* <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                                <FaPencilAlt className="text-2xl capitalize" />
+                                Asesorate
+                                </a> */}
                             </div>
                         </div>
                     </div>
@@ -238,8 +238,8 @@ export const LandingDesktop = () => {
                             </ul>
                             <div className="flex justify-center">
                                 <a href="#portfolio" className="text-white px-4 py-2 font-bold flex gap-2 items-center sle-btn">
-                                <GiHoneycomb className="text-2xl capitalize" />
-                                nuestras soluciones
+                                    <GiHoneycomb className="text-2xl capitalize" />
+                                    nuestras soluciones
                                 </a>
                             </div>
                         </motion.div>

@@ -137,17 +137,26 @@
 //         </div>
 //     )
 // }
-
+'use client'
 import Link from "next/link";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
 import { BsTwitterX, BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
 import Image from "next/image";
 import { GiHoneycomb } from "react-icons/gi";
+import { FaPencilAlt } from "react-icons/fa";
+import { ContactForm } from "../forms/ContactForm";
+import { useIsOpenForm } from "@/store/ContactFormStore";
 
 export const Footer = () => {
+
+    const {isOpen, openCloseForm} = useIsOpenForm()
+
     return (
         <div className="relative bg-white p-10 z-10 flex items-center">
+            {
+                isOpen && <ContactForm />
+            }
             <div className="flex flex-col gap-4 w-[200px]">
                 <Link href='/'>
                     <Image src="/logo.svg" alt="logo" width={100} height={100} />
@@ -176,10 +185,14 @@ export const Footer = () => {
                         <FaLinkedin />
                     </Link> */}
                     <div>
-                        <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center sle-btn">
+                        {/* <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center sle-btn">
                             <GiHoneycomb className="text-2xl capitalize" />
                             Contactanos!
-                        </a>
+                        </a> */}
+                        <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center sle-btn">
+                            <GiHoneycomb className="text-2xl capitalize" />
+                            Contactanos!
+                        </button>
                     </div>
             </div>
         </div>

@@ -68,14 +68,14 @@ export const LandingMobile = () => {
                             </li>
                         </ul>
                         <div className="flex justify-center">
-                            {/* <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
                             <FaPencilAlt className="text-2xl capitalize" />
                             Contactanos
-                            </button> */}
-                            <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            </button>
+                            {/* <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
                             <FaPencilAlt className="text-2xl capitalize" />
                             Contactanos
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -104,14 +104,14 @@ export const LandingMobile = () => {
                             <FaWhatsapp className="text-2xl" />
                             Contactanos
                             </a>
-                            {/* <a href="#" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
-                            <FaPencilAlt className="text-1xl" />
-                            asesorate
-                            </a> */}
-                            <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
                             <FaPencilAlt className="text-2xl capitalize" />
                             Asesorate
-                            </a>
+                            </button>
+                            {/* <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            <FaPencilAlt className="text-2xl capitalize" />
+                            Asesorate
+                            </a> */}
                         </div>
                     </div>
                 </div>

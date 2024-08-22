@@ -64,7 +64,7 @@ export const ContactForm = () => {
     return (
         <div className={`flex flex-col pt-20 items-center contact-form z-[900] top-[92px] h-screen w-screen backdrop-blur-sm bg-gray-400/30 gap-4 ${closing ? 'hide-form' : ''}`}>
             <form
-                className="relative flex flex-wrap w-auto justify-center bg-white p-[40px] gap-[20px] rounded-xl max-h-[60vh] overflow-y-scroll max-w-[80vw]"
+                className="relative flex flex-wrap w-auto justify-center bg-white p-[40px] gap-[20px] rounded-xl max-h-[60vh] overflow-x-hidden overflow-y-scroll max-w-[80vw]"
                 onSubmit={handleSubmit(onSubmit)}
             >
                 <div className='flex flex-col items-center gap-[20px]'>
