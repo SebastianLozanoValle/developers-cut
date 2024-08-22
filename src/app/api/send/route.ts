@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
             to: ['sebastian.lozano@sledevelopment.com', 'juan.estupinan@sledevelopment.com', 'martin.sandoval@sledevelopment.com'],
             // to: ['cesarloco2003@hotmail.com'],
             subject: 'SLE Development ContactForm',
-            react: ProjectEmail({name: body.name, country: body.country, email: body.country, message: body.message, phone: body.phone }),
+            react: ProjectEmail({name: body.name, country: body.country, email: body.email, message: body.message, phone: body.phone }),
           });
       
           if (error) {
