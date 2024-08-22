@@ -166,14 +166,14 @@ export const LandingDesktop = () => {
                             </li>
                         </ul>
                         <div className="flex justify-center">
-                            {/* <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
+                            <button onClick={() => openCloseForm(true)} className="text-white px-4 py-2 font-bold flex gap-2 items-center blue-btn">
                             <FaPencilAlt className="text-2xl capitalize" />
                             Contactanos
-                            </button> */}
-                            <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
+                            </button>
+                            {/* <a href="mailto:info@sledevelopment.com" className="text-white px-4 py-2 font-bold flex gap-2 items-center bg-blue-600 transition-all duration-500 active:bg-blue-800">
                             <FaPencilAlt className="text-2xl capitalize" />
                             Contactanos
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

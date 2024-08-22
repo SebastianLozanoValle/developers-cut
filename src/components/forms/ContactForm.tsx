@@ -27,7 +27,7 @@ export const ContactForm = () => {
 
     const onSubmit = async (data: ClientSchemaType) => {
         try {
-            const response = await fetch('/api/sendemail', {
+            const response = await fetch('/api/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
