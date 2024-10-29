@@ -49,7 +49,7 @@ export const portfolioData = [
     },
     {
         name: "Moq-Lonie",
-        url: "https://swmartinsandoval.website/",
+        url: "https://moqlonie.com.co/",
         category: "ECommerce",
         state: "En Revisión",
         imagesrc: "/moqlonie.png",
@@ -88,7 +88,7 @@ export const portfolioData = [
         description: "Pagina de agendamiento de lavado de autos",
     },
     {
-        name: "Travel and mmeting planner",
+        name: "Travel and meting planner",
         url: "https://travelandmeetingplanner.com/",
         category: "Web Page",
         state: "En Linea",
@@ -96,12 +96,12 @@ export const portfolioData = [
         description: "Dos Webs en una, planeamiento de bodas y viajes",
     },
     {
-        name: "Unete!",
-        url: "",
-        category: "Oportunididad",
-        state: "Estas a Tiempo",
-        imagesrc: "/webdev.jpg",
-        description: "Se Nuestro propio caso de Exito",
+        name: "Loaded",
+        url: "https://loadedexperts.com/",
+        category: "Web Page",
+        state: "En Linea",
+        imagesrc: "/loaded.png",
+        description: "Pagina web de mercado P2P de activos",
     },
     {
         name: "Unete!",
